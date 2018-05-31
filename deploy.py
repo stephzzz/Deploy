@@ -94,15 +94,12 @@ def update():
 file_list = update()
 
 
-
-
-
-dep1 = Deploy(host='------', username='root', pwd='------')
-remoteDir1 = '/app/webserver_new/'      # 该服务器上项目对应的文件夹，最后一定要加上"/"
+dep1 = Deploy(host='', username='', pwd='')
+remoteDir1 = '/app/project/'      # 该服务器上项目对应的文件夹，最后一定要加上"/"
 dep1.run(remoteDir1)
 
 
 dep2  = Deploy(host='',username='', pwd='')
-remoteDir2 = '/app/FhomeServer/'        # 该服务器上项目对应的文件夹，最后一定要加上"/"
+remoteDir2 = '/apps/project/'     # 该服务器上项目对应的文件夹，最后一定要加上"/"
 dep2.run(remoteDir2)
 
